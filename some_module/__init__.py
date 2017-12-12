@@ -10,4 +10,4 @@
  """
 from .code import integrate_trapz
 
-__all__ = ['integrate_trapz']
+__all__ = ['integrate_trapz', 'extract_sentence_containing_word']

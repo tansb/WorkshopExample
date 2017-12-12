@@ -2,12 +2,22 @@ import numpy as np
 import pytest
 
 from some_module import integrate_trapz
+from some_module import extract_sentence_containing_word
 
 
 # Testing the zero case. Plenty of other tests to write!
 def test_integrate_trapz_1():
     xs, ys = np.linspace(0, 10, 10), np.zeros(10)
     assert integrate_trapz(xs, ys) == 0
+
+def test_integrate_trapz_2():
+    xs, ys = np.linspace(0, 10, 10), np.zeros(10)
+    assert integrate_trapz(xs, ys) == 0
+
+
+def test_extract_sentence_containing_word_1():
+    assert test_extract_sentence_containing_word_1('Hello friend. Trying to test.', 'friend') == 'Hello friend'
+
 
 
 # Testing too much - ensuring it fails on weird input
