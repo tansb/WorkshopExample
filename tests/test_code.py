@@ -16,7 +16,7 @@ def test_integrate_trapz_2():
 
 
 def test_extract_sentence_containing_word_1():
-    assert test_extract_sentence_containing_word_1('Hello friend. Trying to test.', 'friend') == 'Hello friend'
+    assert extract_sentence_containing_word('Hello friend. Trying to test.', 'friend') == 'Hello friend'
 
 
 
